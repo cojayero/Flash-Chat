@@ -15,10 +15,17 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func loginPressed(_ sender: UIButton) {
+        debugPrint("loginPressed")
         if  let email = emailTextfield.text, let password = passwordTextfield.text {
-
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            guard let strongSelf = self else {return}
+            debugPrint("email \(email)")
+        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            if let e = error {
+                print(e)
+                debugPrint(e)
+            } else {
+                self.performSegue(withIdentifier: "loginToChat", sender: self)
+            }
+            
         }
         }
     }
