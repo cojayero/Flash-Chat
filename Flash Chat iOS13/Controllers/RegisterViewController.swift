@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -14,6 +15,23 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     
     @IBAction func registerPressed(_ sender: UIButton) {
+        debugPrint("Entering in register pressed,\(emailTextfield.text) \(passwordTextfield.text)")
+        print(#function)
+        if  let email = emailTextfield.text, let password = passwordTextfield.text {
+        Auth.auth().createUser(withEmail: email,
+                              password: password) { authResult, error in
+            print("Llamada a create user completada")
+            if let e = error {
+                debugPrint(e)
+                print("Se produjo un error")
+            } else {
+                // Navigate to the chat view Controller
+                print("Se hizo el registro)")
+                self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                
+            }
+        }
+        }
     }
     
 }

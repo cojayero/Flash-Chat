@@ -8,14 +8,34 @@
 
 import UIKit
 
+
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        var charIndex = 0
+        titleLabel.text = ""
+        loginButton.isHidden = true
+        registerButton.isHidden = true
+        let titleText = "⚡️FlashChat"
+        for letter in titleText{
+            
+            Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
+                self.titleLabel.text?.append( letter)
+            }
+            charIndex += 1
+        }
+        Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
+            self.loginButton.isHidden = false
+            self.registerButton.isHidden = false
+        }
+  
+        
     }
     
 
