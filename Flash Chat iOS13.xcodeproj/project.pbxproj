@@ -25,6 +25,8 @@
 		F35086D427D2AF1A00FCEEE8 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F35086D327D2AF1A00FCEEE8 /* FirebaseFirestoreCombine-Community */; };
 		F35086D627D2AF1A00FCEEE8 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F35086D527D2AF1A00FCEEE8 /* FirebaseFirestoreSwift-Beta */; };
 		F35086D827D2AF1A00FCEEE8 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F35086D727D2AF1A00FCEEE8 /* FirebaseRemoteConfig */; };
+		F38533B0280DA51100D2F8CF /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38533AF280DA51100D2F8CF /* K.swift */; };
+		F38533B3280DAA0C00D2F8CF /* Mensaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38533B2280DAA0C00D2F8CF /* Mensaje.swift */; };
 		F386619927D61FE5001FF674 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F386619827D61FE5001FF674 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F35086C627D2AB0100FCEEE8 /* CLTypingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
+		F38533AF280DA51100D2F8CF /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		F38533B2280DAA0C00D2F8CF /* Mensaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensaje.swift; sourceTree = "<group>"; };
 		F386619827D61FE5001FF674 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,7 @@
 		0B628175235DEE8100E35CAF /* Flash Chat iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				F38533B1280DA9E500D2F8CF /* Models */,
 				F35086C527D2AADC00FCEEE8 /* Utils */,
 				0B628176235DEE8100E35CAF /* AppDelegate.swift */,
 				0B628178235DEE8100E35CAF /* SceneDelegate.swift */,
@@ -92,6 +97,7 @@
 				F386619827D61FE5001FF674 /* GoogleService-Info.plist */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
+				F38533AF280DA51100D2F8CF /* K.swift */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -121,6 +127,14 @@
 				F35086C627D2AB0100FCEEE8 /* CLTypingLabel.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F38533B1280DA9E500D2F8CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F38533B2280DAA0C00D2F8CF /* Mensaje.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +225,12 @@
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
+				F38533B3280DAA0C00D2F8CF /* Mensaje.swift in Sources */,
 				F35086C727D2AB0100FCEEE8 /* CLTypingLabel.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				F38533B0280DA51100D2F8CF /* K.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = ZA7XKBH4ZV;
 				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = ZA7XKBH4ZV;
 				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

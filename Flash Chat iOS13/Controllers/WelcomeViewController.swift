@@ -22,7 +22,7 @@ class WelcomeViewController: UIViewController {
         titleLabel.text = ""
         loginButton.isHidden = true
         registerButton.isHidden = true
-        let titleText = "⚡️FlashChat"
+        let titleText = K.appName
         for letter in titleText{
             
             Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
